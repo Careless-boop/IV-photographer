@@ -1,0 +1,32 @@
+.works__header {
+  text-align: center;
+  background-color: var(--works-header-color);
+}
+.works__title {
+  font-size: 50px;
+}
+.works__description {
+  font-size: 16px;
+  opacity: 0.6;
+}
+.works__content {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+.works__content-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.works__content-photo {
+  width: 500px;
+  height: auto;
+}
+.works__content-card-desc{
+  padding: 15px;
+  background-color: var(--works-content-card-color);
+  width: 100%;
+  text-align: center;
+}

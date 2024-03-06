@@ -1,0 +1,21 @@
+.header{
+  background: transparent;
+}
+.header__nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 5vh;
+}
+.header__nav-link{
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--header-link-color);
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+.header__nav-link:hover{
+  border-bottom: 2px solid var(--header-link-border-color);
+}

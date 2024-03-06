@@ -1,0 +1,33 @@
+.hero{
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero__overlay{
+  content: " ";
+  right: 50%;
+  background-color: var(--hero-overlay-color);
+  opacity: 0.1;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  z-index: 0;
+}
+.hero__content{
+  text-align: center;
+  bottom: 50%;
+}
+.hero__title{
+  font-size: 55px;
+}
+.hero__subtitle{
+  font-size: 32px;
+}
+.hero__subtitle-span{
+  font-size: 32px;
+  text-decoration: underline;
+  color: var(--hero-subtitle-span-color);
+}
