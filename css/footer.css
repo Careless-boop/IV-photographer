@@ -1,0 +1,15 @@
+.footer{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: var(--footer-background-color);
+}
+.footer__useful-link:link,
+.footer__useful-link:visited,
+.footer__useful-link:hover,
+.footer__useful-link:active{
+  text-decoration: underline;
+}
+.footer__unnecesary-info-text{
+  opacity: 0.7;
+}

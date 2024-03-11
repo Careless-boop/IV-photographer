@@ -12,10 +12,15 @@
   --header-text-stroke-color: black;
   --header-link-border-color: #683eff;
   --main-background-color: rgba(96, 199, 247, 0.2);
-  --hero-overlay-color: #683eff;
+  --hero-overlay-color: #683eff1a;
   --hero-subtitle-span-color: #683eff;
   --works-header-color: #683eff1a;
   --works-content-card-color: #683eff1a;
+  --works-more-btn-color: #683eff;
+  --faq-header-color: #EABFCB;
+  --faq-toggle-color: rgb(10,10,10);
+  --faq-border-line-color: #EABFCB;
+  --footer-background-color: #F4F1BB;
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
 }
@@ -30,8 +35,7 @@ a:active {
 }
 .body {
   background-color: var(--body-background-color);
-}
-.main {
+  width: 100%;
 }
 .container {
   max-width: 1100px;
