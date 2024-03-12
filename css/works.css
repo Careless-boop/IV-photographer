@@ -13,7 +13,7 @@
 .works__content {
   display: flex;
   flex-direction: row;
-  gap: 100px;
+  column-gap: 100px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -32,24 +32,7 @@
   width: 100%;
   text-align: center;
 }
-.works__more {
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.works__more-btn,
-.works__more-btn:link,
-.works__more-btn:visited {
-  text-decoration: underline;
-  color: var(--works-more-btn-color);
-  font-weight: bold;
-  border-radius: 6px;
-  transition: all 0.2s ease;
-  padding: 10px;
-}
-.works__more-btn:hover{
-  border: 2px solid var(--works-more-btn-color);
-}
+
 @media (max-width: 500px) {
   .works__content-photo {
     width: 320px;

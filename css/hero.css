@@ -4,13 +4,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .hero__overlay{
   content: " ";
   right: 50%;
   background-color: var(--hero-overlay-color);
-  opacity: 0.1;
-  top: 0px;
+  top: -5vh;
   bottom: 0px;
   left: 0px;
   position: absolute;
