@@ -8,7 +8,7 @@
 :root {
   --body-background-color: white;
   --header-background-color: white;
-  --header-link-color: rgb(10,10,10);
+  --header-link-color: rgb(10, 10, 10);
   --header-text-stroke-color: black;
   --header-link-border-color: #683eff;
   --main-background-color: rgba(96, 199, 247, 0.2);
@@ -17,10 +17,11 @@
   --works-header-color: #683eff1a;
   --works-content-card-color: #683eff1a;
   --works-more-btn-color: #683eff;
-  --faq-header-color: #EABFCB;
-  --faq-toggle-color: rgb(10,10,10);
-  --faq-border-line-color: #EABFCB;
-  --footer-background-color: #F4F1BB;
+  --faq-header-color: #eabfcb;
+  --faq-toggle-color: rgb(10, 10, 10);
+  --faq-border-line-color: #eabfcb;
+  --services-header-color: #bfeadc;
+  --footer-background-color: #f4f1bb;
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
 }

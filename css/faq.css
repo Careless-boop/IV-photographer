@@ -1,4 +1,4 @@
-.faq{
+.faq {
   padding-bottom: 40px;
 }
 .faq__header {
@@ -63,13 +63,20 @@
   padding-bottom: 20px;
 }
 .faq__answer {
-  max-height: 25.5px; /*will make it zero when accordion is ready*/
+  max-height: 0px;
   overflow: hidden;
   transition: all 0.3s ease-out;
 }
 .faq__answer-text {
   font-size: 1.1em;
   line-height: 25.5px;
+}
+.faq__question.active .faq__toggle::after {
+  height: 0px;
+}
+.faq__question.active + .faq__answer {
+  max-height: 300px;
+  margin-top: 20px;
 }
 
 @media (max-width: 650px) {

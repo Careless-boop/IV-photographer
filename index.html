@@ -7,6 +7,7 @@
     <link rel="icon" href="img/icon.png" type="image/png" />
     <link rel="stylesheet" href="css/index.css" />
     <title>Photographer page</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   </head>
   <body class="body">
     <header class="header">
@@ -187,6 +188,83 @@
           </ul>
         </div>
       </section>
+      <section class="services" id="services">
+        <div class="services__header">
+          <h3 class="services__title">Services</h3>
+          <p class="services__description">
+            Here you can order some services that I provide.
+          </p>
+        </div>
+        <div class="services__container container">
+          <div class="services__categories">
+            <div
+              class="services__category"
+              v-for="category in categories"
+              :key="category.type"
+            >
+              <p class="category">{{ category.type }}</p>
+              <div class="category__services">
+                <div
+                  class="service"
+                  v-for="service in category.services"
+                  :key="service.name"
+                >
+                  <div>
+                    <p class="service__name">{{ service.name }}</p>
+                    <p class="service__price">
+                      Price: {{ service.price }}$ {{service.notes}}
+                    </p>
+                  </div>
+                  <button
+                    class="service__add-button"
+                    @click="addToCart(service)"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="services__total">
+            <h3 class="services__total-price">
+              Services: {{ selectedServicesCount }}
+            </h3>
+            <button
+              class="services__total-open-button"
+              @click="isModalOpen=true"
+            >
+              Show selected
+            </button>
+          </div>
+          <div v-if="isModalOpen" class="services__modal">
+            <div class="modal__content">
+              <span class="modal__close" @click="isModalOpen=false"
+                >&times;</span
+              >
+              <ul class="modal__list">
+                <li
+                  class="modal__item"
+                  v-for="(service, index) in selectedServicesDetails"
+                  :key="service.id"
+                >
+                  <div class="modal__item-text">
+                    <p>{{service.name}}</p>
+                    <p>{{ service.price}}$ {{service.notes}}</p>
+                  </div>
+                  <button
+                    class="modal__item-remove-button"
+                    @click="removeFromCart(index)"
+                  >
+                    x
+                  </button>
+                </li>
+              </ul>
+              <p class="modal__total">Selected: {{ selectedServicesCount }}</p>
+              <p class="modal__total">Total price: {{ totalPrice }}$</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__useful-links">
@@ -209,5 +287,7 @@
         <p class="footer__unnecesary-info-text">All rights reserved</p>
       </div>
     </footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/services.js"></script>
   </body>
 </html>
